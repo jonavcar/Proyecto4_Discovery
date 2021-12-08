@@ -1,0 +1,20 @@
+server:
+    port: 9999
+    
+spring:
+  application:
+      name: api-discovery
+      
+eureka:
+    server:
+        enableSelfPreservation: false
+        
+    instance:
+        hostname: api-discovery
+    
+    client:
+        registerWithEureka: false
+        fetchRegistry: false
+        serviceUrl:
+            defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+        
