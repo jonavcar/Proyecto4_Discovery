@@ -10,7 +10,7 @@ eureka:
         enableSelfPreservation: false
         
     instance:
-        hostname: api-discovery
+        hostname: localhost
     
     client:
         registerWithEureka: false
